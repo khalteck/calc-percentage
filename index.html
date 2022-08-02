@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Percentage calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="output.css">
+        <script src="https://kit.fontawesome.com/5e43348ada.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="body" class="w-full min-h-[100vh] p-6 bg-slate-50 font-over leading-normal tracking-normal flex justify-center items-center">
+        <div class="w-[fit-content] flex justify-between items-start absolute top-[20px] md:left-[20px]">
+            <div class="px-3"><i class="fas fa-sun text-[30px] text-red-400"></i></div>
+            <div class="dot w-[60px] border-2 border-red-400 p-1 rounded-[45px] cursor-pointer">
+                <div class="w-[20px] h-[20px] rounded-[100%] bg-red-400"></div>
+            </div>
+            <div class="dot2 w-[60px] border-2 border-red-400 p-1 rounded-[45px] cursor-pointer hidden">
+                <div class="w-[20px] h-[20px] rounded-[100%] bg-red-400 float-right"></div>
+            </div>
+            <div class="px-3"><i class="fas fa-moon text-[30px] text-red-400"></i></div>
+        </div>
+        <section class="w-full md:w-[380px]">
+            <h1 class="heading bg-[#ff7a7a] w-full md:w-[380px] py-3 mb-5 text-[20px] text-white text-center border border-slate-d-200 rounded-lg shadow-lg">Percentage Calculator</h1>
+            <div class="cont w-full px-4 py-10 bg-slate-100 md:w-[380px] shadow-xl rounded-lg border border-red-300">
+                <label for="total" class="text-[20px]">Total</label>
+                <input type="number" id="total" class="field w-full bg-gray-50 mb-5 placeholder:text-gray-400 p-3 focus:outline-none border border-red-300 rounded-md" placeholder="Total number or amount">
+                <label for="value" class="text-[20px]">Value</label>
+                <input type="number" id="value" class="field w-full bg-gray-50 mb-5 placeholder:text-gray-400 p-3 focus:outline-none border border-red-300 rounded-md" placeholder="Value or your share">
+                <label for="total" class="text-[20px]">Percentage %</label>
+                <div id="answer" class="w-full h-[48px] p-3 text-black bg-gray-200 mb-5 placeholder:text-gray-400 focus:outline-none border border-red-300 rounded-md"></div>
+                <button id="submit" class="w-full p-3 bg-red-400 text-white rounded-md mt-3">Calculate</button>
+            </div>
+        </section>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
